@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table Ghetto</title>
+	<style>
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400");
+* {
+  box-sizing: inherit;
+}
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 64.5%;
+}
+
+body {
+  background-color: #0984e3;
+  align-items: center;
+  color: #262626;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.container {
+  border-radius: 15px;
+  background-color: #333;
+  margin: 5rem auto;
+  width: 140rem;
+  padding: 4rem;
+}
+
+.grid-table {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(7, auto);
+  grid-template-columns: repeat(3, auto);
+}
+.grid-table > div {
+  background-color: #fff;
+  border: 1.2px solid grey;
+  padding: 1rem 2.5rem;
+}
+.grid-table > div.--is-striped {
+  background-color: #6c5ce7;
+}
+.grid-table:hover {
+	transition: 3s;
+	transform: scale(1.05);
+}
+.grid-table:not(:hover){
+	transition: 3s;
+	transform: scale(1);
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="grid-table">
+    <div order="1">Номер</div>
+    <div order="2">ТОП-1</div>
+    <div order="3">ТОП-2</div>
+    <div order="4">ТОП-3</div>
+    <div order="5">ТОП-4</div>
+    <div order="6">ТОП-5</div>
+    <div order="7">ТОП-6</div>
+
+    <div order="1">Ник</div>
+    <div order="2">Sqquady_Monterra</div>
+    <div order="3">Dead_Lacoste</div>
+    <div order="4">Tofik_Dipsize</div>
+    <div order="5">Anna_Winsent</div>
+    <div order="6">Dre_Asher</div>
+    <div order="7">Uragan_Hokage</div>
+
+    <div order="1">Убийства</div>
+    <div order="2">2457</div>
+    <div order="3">2059</div>
+    <div order="4">1951</div>
+    <div order="5">1759</div>
+    <div order="6">1600</div>
+    <div order="7">1256</div>
+
+
+    <div order="1">Приз</div>
+    <div order="2">2000 рублей на аккаунт</div>
+    <div order="3">1800 рублей на аккаунт</div>
+    <div order="4">1200 рублей на аккаунт</div>
+    <div order="5">800 рублей на аккаунт</div>
+    <div order="6">650 рублей на аккаунт</div>
+    <div order="7">500 рублей на аккаунт</div>
+</div>
+  </div>
+</div>
+ <script src="assets/js/table.js"></script>   
+</body>
+</html>
